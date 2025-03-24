@@ -27,7 +27,7 @@ Follow these steps to install Text2Asset in your Godot project:
 2. **Install the Plugin**:
    - Open your Godot project (Godot 4.x recommended).
    - Create an `addons/` folder in your project directory if it doesn’t exist (`res://addons/`).
-   - Unzip `text2asset.zip` into `res://addons/`, resulting in:
+   - Unzip `text2asset.zip` into `res://addons/`, resulting in:\
 res://addons/Text2Asset/\
 ├── plugin.cfg\
 ├── plugin.gd\
