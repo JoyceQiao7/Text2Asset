@@ -1,0 +1,116 @@
+[gd_scene load_steps=6 format=3 uid="uid://x3pq51cjggfp"]
+
+[ext_resource type="Script" uid="uid://dt1o6m6lc4mwb" path="res://addons/Text2Asset/ui.gd" id="1_ey0yk"]
+[ext_resource type="Texture2D" uid="uid://c0bqyn2jbg2qi" path="res://generated/an_orange_cat_1.png" id="2_t4562"]
+[ext_resource type="Texture2D" uid="uid://duad5fydkwk3o" path="res://generated/a_princess_1.png" id="4_h1408"]
+[ext_resource type="Texture2D" uid="uid://cekcy2b7f8d40" path="res://generated/a_tree_1.png" id="5_5hsrq"]
+[ext_resource type="Texture2D" uid="uid://cnyf73fow26it" path="res://generated/a_blue_bird_1.png" id="6_vvxvq"]
+
+[node name="ui" type="Control"]
+layout_mode = 3
+anchor_left = -0.507
+anchor_top = -0.388
+anchor_right = 2.058
+anchor_bottom = 1.878
+offset_left = 584.064
+offset_top = 251.424
+offset_right = -2370.82
+offset_bottom = -1216.94
+script = ExtResource("1_ey0yk")
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[node name="OptionButton" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 7.0
+offset_right = 439.0
+offset_bottom = 163.0
+item_count = 20
+popup/item_0/text = "Impressionism"
+popup/item_0/id = 3
+popup/item_1/text = "Surrealism"
+popup/item_1/id = 4
+popup/item_2/text = "Abstract Expressionism"
+popup/item_2/id = 5
+popup/item_3/text = "Realism"
+popup/item_3/id = 6
+popup/item_4/text = "Classicism"
+popup/item_4/id = 7
+popup/item_5/text = "Romanticism"
+popup/item_5/id = 8
+popup/item_6/text = "Fauvism"
+popup/item_6/id = 9
+popup/item_7/text = "Cubism"
+popup/item_7/id = 10
+popup/item_8/text = "Expressionism"
+popup/item_8/id = 11
+popup/item_9/text = "Minimalism"
+popup/item_9/id = 12
+popup/item_10/text = "Pointillism"
+popup/item_10/id = 10
+popup/item_11/text = "Neoclassicism"
+popup/item_11/id = 11
+popup/item_12/text = "Pop Art"
+popup/item_12/id = 12
+popup/item_13/text = "Symbolism"
+popup/item_13/id = 13
+popup/item_14/text = "Art Deco"
+popup/item_14/id = 14
+popup/item_15/text = "Baroque"
+popup/item_15/id = 15
+popup/item_16/text = "Renaissance"
+popup/item_16/id = 16
+popup/item_17/text = "Graffiti Art"
+popup/item_17/id = 17
+popup/item_18/text = "Futurism"
+popup/item_18/id = 18
+popup/item_19/text = "Dadaism"
+popup/item_19/id = 19
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 166.0
+offset_right = 1129.0
+offset_bottom = 286.0
+theme_override_font_sizes/font_size = 30
+placeholder_text = "Enter your character / prop description here:"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 543.0
+offset_right = 563.0
+offset_bottom = 642.0
+theme_override_font_sizes/font_size = 24
+text = "Generate!"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 582.0
+offset_top = 543.0
+offset_right = 1099.0
+offset_bottom = 634.0
+
+[node name="AnOrangeCat1" type="Sprite2D" parent="."]
+position = Vector2(-82, -1039)
+scale = Vector2(2.882, 2.59)
+texture = ExtResource("2_t4562")
+
+[node name="APrincess1" type="Sprite2D" parent="."]
+position = Vector2(865, -915)
+scale = Vector2(3.844, 3.574)
+texture = ExtResource("4_h1408")
+
+[node name="OpenAIHTTPRequest" type="HTTPRequest" parent="."]
+
+[node name="ABlueBird1" type="Sprite2D" parent="."]
+position = Vector2(1793, -1879)
+scale = Vector2(1.414, 1.456)
+texture = ExtResource("6_vvxvq")
+
+[node name="ATree1" type="Sprite2D" parent="."]
+position = Vector2(3480, -1150)
+scale = Vector2(4.256, 4.222)
+texture = ExtResource("5_5hsrq")
